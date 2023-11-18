@@ -58,6 +58,14 @@ p
 }
 
 
+.container p
+{
+    
+    text-align: center;
+    
+}
+
+
 
 .main-content
 {
@@ -88,5 +96,4 @@ footer
 {
     padding-right: 20px;
 }
-
 
