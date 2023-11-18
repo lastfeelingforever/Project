@@ -53,7 +53,7 @@ p
 .container h3
 {
     padding-top: 20px;
-    text-align: center;
+    text-align-last: center;
     
 }
 
@@ -61,7 +61,7 @@ p
 .container p
 {
     
-    text-align: center;
+    text-align-last: center;
     
 }
 
@@ -90,10 +90,12 @@ footer
 .col-l
 {
     padding-left: 20px;
+    text-align-last: left;
 }
 
 .col-r
 {
     padding-right: 20px;
+    text-align-last: left;
 }
 
