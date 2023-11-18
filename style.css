@@ -38,9 +38,9 @@ p
 .container
 {
     max-width: 10;
-    width: auto;
+    width: 80%;
     max-height: 10;
-    height: auto;
+    height: 25%;
     margin: 0 auto;
     background: #ffffff; ;
     align-items: center;
