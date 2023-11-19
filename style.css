@@ -35,12 +35,14 @@ p
     text-indent: 1.5em;
 }
 
+
+
 .container
 {
     max-width: 10;
-    width: 80%;
+    width: 260px;
     max-height: 10;
-    height: 25%;
+    height: 150px;
     margin: 0 auto;
     background: #ffffff; ;
     align-items: center;
@@ -50,18 +52,20 @@ p
 
 
 
+
+
 .container h3
 {
     padding-top: 20px;
-    text-align-last: center;
+    text-align: center;
     
 }
 
 
 .container p
 {
-    
-    text-align-last: center;
+    padding-right: 7px;
+    text-align: center;
     
 }
 
@@ -77,25 +81,36 @@ p
     flex: 0 0 auto;
 } 
 
+.link
+{
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.link img
+{
+    width: 45px;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.link img:hover
+{
+    opacity: 1;
+}
+
 footer
     {
         width: 100%;
-        max-width: 1600px;
+        max-width: 100%;
         height: 70px;
         display: flex;
-        justify-content: space-between;
-        padding-top: 25px;
+        padding-top: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
-.col-l
-{
-    padding-left: 20px;
-    text-align-last: left;
-}
 
-.col-r
-{
-    padding-right: 20px;
-    text-align-last: left;
-}
+
 
