@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/Project/lff.png">
     <link rel="stylesheet" href="/Project/stylei.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
 <body>
 
@@ -19,28 +20,22 @@
   buttonsStyling: false
 });
 swalWithBootstrapButtons.fire({
-  title: "Are you sure?",
-  text: "You won't be able to revert this!",
-  icon: "warning",
+  title: "Notice",
+  text: "This site currently under maintenance, Do you want to continue?",
+  icon: "info",
   showCancelButton: true,
-  confirmButtonText: "Yes, delete it!",
-  cancelButtonText: "No, cancel!",
+  confirmButtonText: "Yes",
+  cancelButtonText: "No",
   reverseButtons: true
 }).then((result) => {
   if (result.isConfirmed) {
-    swalWithBootstrapButtons.fire({
-      title: "Deleted!",
-      text: "Your file has been deleted.",
-      icon: "success"
-    });
+    
   } else if (
     /* Read more about handling dismissals below */
     result.dismiss === Swal.DismissReason.cancel
   ) {
     swalWithBootstrapButtons.fire({
-      title: "Cancelled",
-      text: "Your imaginary file is safe :)",
-      icon: "error"
+      window:close()
     });
   }
 });
