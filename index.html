@@ -12,33 +12,14 @@
 <body>
 
     <script>
-    /*Swal.fire({
+    Swal.fire({
      title: "Notice",
-     text: "Website currently under maintenance, Do you still want to continue?",
+     text: "This site currently under maintenance, Do you still want to continue?",
      icon: "warning",
+     confirmButtonColor: "#3085d6",
      confirmButtonText: "Yes"
-     });*/
-    Swal.fire({
-    title: "Notice",
-    text: "This site currently under maintenance, Do you still want to continue?",
-    icon: "info",
-    showDenyButton: true,
-    confirmButtonText: "Yes",
-    denyButtonText: "No",
-    }).then((result) => {
-  if (result.isConfirmed) {
-    Swal.fire({
-    title: "Welcome",
-    icon: "success",
-    timer: 1000
-});
-  } else if (result.isDenied) {
-   
-    window.open('', '_self', '');
-    window.close();
-
-  }
-});
+     });
+  
      
 
 
