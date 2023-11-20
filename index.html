@@ -11,7 +11,7 @@
 </head>
 <body>
 
-     <script>
+    <script>
     /*Swal.fire({
      title: "Notice",
      text: "Website currently under maintenance, Do you still want to continue?",
@@ -19,17 +19,21 @@
      confirmButtonText: "Yes"
      });*/
     Swal.fire({
-    title: "Are you sure?",
-    text: "You won't be able to revert this!",
-    icon: "warning",
+    title: "Notice",
+    text: "This site currently under maintenance, Do you still want to continue?",
+    icon: "info",
     showDenyButton: true,
     confirmButtonText: "Yes",
-    denyButtonText: "No, cancel!",
+    denyButtonText: "No",
     }).then((result) => {
   if (result.isConfirmed) {
-    Swal.fire("Saved!", "", "success");
+    Swal.fire({
+    title: "Welcome",
+    icon: "success",
+    timer: 1000
+});
   } else if (result.isDenied) {
-    Swal.fire("Changes are not saved", "", "info");
+    window:close();
   }
 });
      
@@ -39,7 +43,6 @@
 
 
     </script>
-
 
     
     
