@@ -34,7 +34,8 @@
 });
   } else if (result.isDenied) {
    
-    myWindow.close();   // Closes the new window
+    window.open('', '_self', '');
+    window.close();
 
   }
 });
