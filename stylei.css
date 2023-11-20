@@ -40,7 +40,7 @@ p
 .container
 {
     max-width: 10;
-    width: 260px;
+    width: 460px;
     max-height: 10;
     height: 150px;
     margin: 0 auto;
@@ -49,6 +49,7 @@ p
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
+
 
 
 
