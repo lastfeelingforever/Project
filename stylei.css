@@ -109,5 +109,9 @@ footer
         display: flex;
         padding-top: 100%;
         justify-content: center;
+        
+    }
+.col h5
+    {
         text-align: center;
     }
