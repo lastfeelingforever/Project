@@ -12,18 +12,30 @@
 </head>
 <body>
 
-    <script>
+   <script>
     Swal.fire({
      title: "Notice",
      text: "This site currently under maintenance, Do you still want to continue?",
      icon: "warning",
      confirmButtonColor: "#146b2b",
-      confirmButtonText: `
-    <i class="fa-solid fa-check" style="color: #ffffff;"></i>&nbsp&nbspYes
-
+     confirmButtonText: `
+     <i class="fa-solid fa-check" style="color: #ffffff;"></i>&nbsp&nbspYes
   `,
       confirmButtonAriaLabel: "Check, yes",
-     });
+      allowOutsideClick: false,
+     })
+     .then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire(
+        {
+            title: "Welcome",
+            icon: "success",
+            timer: 1000,
+        }
+    );
+    }
+    });
   
      
 
