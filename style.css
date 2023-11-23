@@ -58,7 +58,7 @@ p
     display: inline-block;
     font-family: "arial";
     font-size: 24px;
-    padding-left: 41.3%;
+    
     
   }
   
@@ -138,12 +138,11 @@ ul {
 .headback
 {
     background-color: #666666;
-    background-image: url('bit.ly/bg-npm');
+    background-image: url('https://i.ibb.co/2gSMJFy/Roblox-Screen-Shot20230926-162332622-1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 
 .container h3
