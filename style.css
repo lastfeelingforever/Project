@@ -53,6 +53,40 @@ p
 /***********************************/
 
 
+.typin{
+    align-items: center;
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+    padding-left: 41.5%;
+    
+  }
+  
+  .typed {
+    overflow: hidden;
+    margin: 0;
+    margin-right: auto;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+    
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+
+
+
+/***********************************/
+
+
 
 
 
