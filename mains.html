@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="/Project/style.css">
+    <link rel="stylesheet" href="/Project/slideTemp.css">
 </head>
 <body>
     <div class="nav">
@@ -31,31 +32,73 @@
 
 
 
-        <div class="typin">
-            <h3 class="typed">        
-             Last Feeling Forever
-            </h3>
-        </div>
+            <div class="typin">
+                <h3 class="typed">        
+                Last Feeling Forever
+                </h3>
+            </div>
         </div>
         
-        <div class="main-content">
-            
-            
-            </div>
 
+    
+        <div class="main-content">
+            <!--image slider start-->
+            <div class="slider">
+                <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="Education Page.png" alt="">
+                </div>
+                <!--<div class="slide">
+                    <img src="lff.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="4.jpg" alt="">
+                </div>-->
+                </div>
+                
+            </div>
+            <!--image slider end-->
+        
+            <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                counter = 1;
+                }
+            }, 5000);
+            </script>  
+        </div>
+
+       
+    
             
-               <p>Welcome to l.ff Site! Please join our community server and fetch our new updates! <br> ~ l.ff </p> 
+        <div class="contents">
+            <p>Welcome to l.ff Site! Please join our community server and fetch our new updates! <br> ~ l.ff </p> 
+        </div>   
+              
            
             
 
 
     </div>
-        <div class="link">
-            <a href="https://discord.gg/SsKpfUCNZx"target="_blank"><img src="Discord.png"></a>
-        </div>
-        
+            <div class="link">
+                <a href="https://discord.gg/SsKpfUCNZx"target="_blank"><img src="Discord.png"></a>
+            </div>
+            
 
-    </div>
+        </div>
     <footer>
         <div class="col">
             <h5>Last Feeling Forever Site</h5>
