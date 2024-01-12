@@ -137,7 +137,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background: rgb(196,218,5);
+    background: linear-gradient(90deg, rgba(196,218,5,1) 38%, rgba(145,223,93,1) 100%);
   }
   
   li {
@@ -146,18 +147,22 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: rgb(0, 90, 86);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #d3df6c;
+  }
+
+  .active:hover {
+    background-color: #b2e690;
   }
   
   .active {
-    background-color: #67af36;
+    background-color: #91df5d;
   }
 
 
